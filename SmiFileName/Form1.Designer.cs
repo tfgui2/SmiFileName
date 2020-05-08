@@ -28,13 +28,116 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.listBoxSmi = new System.Windows.Forms.ListBox();
+            this.listBoxAvi = new System.Windows.Forms.ListBox();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // listBoxSmi
+            // 
+            this.listBoxSmi.AllowDrop = true;
+            this.listBoxSmi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listBoxSmi.FormattingEnabled = true;
+            this.listBoxSmi.ItemHeight = 24;
+            this.listBoxSmi.Location = new System.Drawing.Point(0, 0);
+            this.listBoxSmi.Name = "listBoxSmi";
+            this.listBoxSmi.Size = new System.Drawing.Size(503, 712);
+            this.listBoxSmi.TabIndex = 0;
+            this.listBoxSmi.DragDrop += new System.Windows.Forms.DragEventHandler(this.listBoxSmi_DragDrop);
+            this.listBoxSmi.DragEnter += new System.Windows.Forms.DragEventHandler(this.listBoxSmi_DragEnter);
+            // 
+            // listBoxAvi
+            // 
+            this.listBoxAvi.AllowDrop = true;
+            this.listBoxAvi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listBoxAvi.FormattingEnabled = true;
+            this.listBoxAvi.ItemHeight = 24;
+            this.listBoxAvi.Location = new System.Drawing.Point(0, 0);
+            this.listBoxAvi.Name = "listBoxAvi";
+            this.listBoxAvi.Size = new System.Drawing.Size(509, 712);
+            this.listBoxAvi.TabIndex = 1;
+            this.listBoxAvi.DragDrop += new System.Windows.Forms.DragEventHandler(this.listBoxAvi_DragDrop);
+            this.listBoxAvi.DragEnter += new System.Windows.Forms.DragEventHandler(this.listBoxAvi_DragEnter);
+            // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Location = new System.Drawing.Point(90, 85);
+            this.splitContainer1.Name = "splitContainer1";
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.listBoxSmi);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.listBoxAvi);
+            this.splitContainer1.Size = new System.Drawing.Size(1016, 712);
+            this.splitContainer1.SplitterDistance = 503;
+            this.splitContainer1.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(95, 48);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(47, 24);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Smi";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(617, 48);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(41, 24);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Avi";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1124, 85);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(158, 103);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Trans";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(1336, 868);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.splitContainer1);
+            this.Name = "Form1";
+            this.Text = "SmiFileName";
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.ListBox listBoxSmi;
+        private System.Windows.Forms.ListBox listBoxAvi;
+        private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button button1;
     }
 }
 
