@@ -33,7 +33,8 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonTrans = new System.Windows.Forms.Button();
+            this.buttonClear = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -101,21 +102,33 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Avi";
             // 
-            // button1
+            // buttonTrans
             // 
-            this.button1.Location = new System.Drawing.Point(1124, 85);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(158, 103);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Trans";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonTrans.Location = new System.Drawing.Point(1124, 85);
+            this.buttonTrans.Name = "buttonTrans";
+            this.buttonTrans.Size = new System.Drawing.Size(158, 103);
+            this.buttonTrans.TabIndex = 5;
+            this.buttonTrans.Text = "Trans";
+            this.buttonTrans.UseVisualStyleBackColor = true;
+            this.buttonTrans.Click += new System.EventHandler(this.buttonTrans_Click);
+            // 
+            // buttonClear
+            // 
+            this.buttonClear.Location = new System.Drawing.Point(1124, 206);
+            this.buttonClear.Name = "buttonClear";
+            this.buttonClear.Size = new System.Drawing.Size(158, 103);
+            this.buttonClear.TabIndex = 6;
+            this.buttonClear.Text = "clear";
+            this.buttonClear.UseVisualStyleBackColor = true;
+            this.buttonClear.Click += new System.EventHandler(this.buttonClear_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1336, 868);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonClear);
+            this.Controls.Add(this.buttonTrans);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.splitContainer1);
@@ -137,7 +150,8 @@
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonTrans;
+        private System.Windows.Forms.Button buttonClear;
     }
 }
 
